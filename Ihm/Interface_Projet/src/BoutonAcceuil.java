@@ -9,6 +9,7 @@ public class BoutonAcceuil implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals(" Cliquer ici pour accéder au menu ")) {
 			Menu.creation();
+		
 		}
 	}
 }

@@ -20,7 +20,7 @@ public class Acceuil extends JFrame implements ActionListener {
 		Icon ic=new ImageIcon(wall);
 		JLabel jl=new JLabel(ic);
 		c.add(jl,BorderLayout.CENTER);
-		Image wallpi=f.getToolkit().getImage("image(1).png/");
+		Image wallpi=f.getToolkit().getImage("acceuil.png/");
 		Icon ico=new ImageIcon(wallpi);
 		JLabel jla=new JLabel(ico);
 		c.add(jla,BorderLayout.NORTH);
@@ -34,7 +34,7 @@ public class Acceuil extends JFrame implements ActionListener {
 		JPanel tata=new JPanel();
 		tata.add(toto);
 		c.add(toto,BorderLayout.SOUTH);
-		f.setTitle("");
+		f.setTitle("FunFabLab");
 		f.pack();
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		f.setVisible(true);

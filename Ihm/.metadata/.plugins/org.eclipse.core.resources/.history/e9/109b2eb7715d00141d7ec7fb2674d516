@@ -1,0 +1,151 @@
+
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+@SuppressWarnings("serial")
+public class Menu extends JFrame implements ActionListener{
+
+	
+	public static void creation(){
+
+		final JFrame f=new JFrame();
+		Container c=f.getContentPane();
+		c.setLayout(new BorderLayout());
+		c.add(new JLabel("Cliquez sur une couleur pour voir ses nuances et les niveaux de gris"),BorderLayout.NORTH);
+		JFrame f1=new JFrame();
+		Container c1=f1.getContentPane();
+		c1.setLayout(new GridLayout(3,3,5,5));
+		Dimension d=new Dimension(150,50);
+		JPanel pa=new JPanel();
+		JPanel pa1=new JPanel();
+		JPanel pa2=new JPanel();
+		JPanel pa3=new JPanel();
+		JPanel pa4=new JPanel();
+		JPanel pa5=new JPanel();
+		JPanel pa6=new JPanel();
+		JPanel pa7=new JPanel();
+		JPanel pa8=new JPanel();
+
+		JButton a=new JButton("Bleu");
+		a.setPreferredSize(d);
+		a.setBackground(new Color(0,72,255));
+		JButton b=new JButton("Jaune");
+		b.setPreferredSize(d);
+		b.setBackground(Color.yellow);
+		JButton e=new JButton("Rouge");
+		e.setPreferredSize(d);
+		e.setBackground(Color.red);
+		JButton g=new JButton("Vert");
+		g.setPreferredSize(d);
+		g.setBackground(Color.green);
+		JButton h=new JButton("Rose");
+		h.setPreferredSize(d);
+		h.setBackground(Color.pink);
+		JButton i=new JButton("Orange");
+		i.setPreferredSize(d);
+		i.setBackground(Color.orange);
+		JButton k=new JButton("Violet");
+		k.setPreferredSize(d);
+		k.setBackground(Color.magenta);
+		JButton l=new JButton("Blanc");
+		l.setPreferredSize(d);
+		l.setBackground(Color.white);
+		JButton m=new JButton("Marron");
+		m.setPreferredSize(d);
+		m.setBackground(new Color(110,51,0));
+		pa.add(a);
+		pa1.add(b);
+		pa2.add(e);
+		pa3.add(g);
+		pa4.add(h);
+		pa5.add(i);
+		pa6.add(k);
+		pa7.add(l);
+		pa8.add(m);
+
+/*
+		c1.add(pa);
+		a.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new NuancesBleu();
+				f.setVisible(false);
+			}
+		});
+
+		c1.add(pa1);
+		b.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new NuancesJaune();
+				f.setVisible(false);
+			}
+		});
+		c1.add(pa2);
+		e.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new NuancesRouge();
+				f.setVisible(false);
+			}
+		});
+		c1.add(pa3);
+		g.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new NuancesVert();
+				f.setVisible(false);
+			}
+		});
+		c1.add(pa4);
+		h.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new NuancesRose();
+				f.setVisible(false);
+			}
+		});
+		c1.add(pa5);
+		i.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new NuancesOrange();
+				f.setVisible(false);
+			}
+		});
+		c1.add(pa6);
+		k.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new NuancesViolet();
+				f.setVisible(false);
+			}
+		});
+		c1.add(pa7);
+		l.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new NuancesBlanc();
+				f.setVisible(false);
+			}
+		});
+		c1.add(pa8);
+		m.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				new NuancesMarron();
+				f.setVisible(false);
+			}
+		});
+		*/
+
+
+		c.add(c1,BorderLayout.CENTER);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setSize(640,480);
+		f.setResizable(false);
+		f.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
